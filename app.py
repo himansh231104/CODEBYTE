@@ -5,11 +5,11 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
-@app.route('/about')
+@app.route('/base')
 def about():
-    return render_template('inner-page.html')
+    return render_template('base.html')
 
-@app.route('/contact')
+@app.route('/portfolio')
 def contact():
     return render_template('portfolio-details.html')
 
