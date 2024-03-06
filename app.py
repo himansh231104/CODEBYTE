@@ -13,9 +13,9 @@ def about():
 def contact():
     return render_template('portfolio-details.html')
 
-@app.route('/course')
+@app.route('/python')
 def course():
-    return render_template('course.html')
+    return render_template('python.html')
 
 
 
