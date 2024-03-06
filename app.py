@@ -13,6 +13,10 @@ def about():
 def contact():
     return render_template('portfolio-details.html')
 
+@app.route('/course')
+def course():
+    return render_template('course.html')
+
 
 
 
