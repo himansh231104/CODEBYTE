@@ -17,6 +17,27 @@ def portfolio():
 def user_profile():
     return render_template('user-profile.html')
 
+@app.route('/register')
+def register():
+    return render_template('register.html')
+
+@app.route('/login')
+def login():
+    return render_template('login.html')
+
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
+
+# Define a custom 404 error handler
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+
+
+#-------------------------COURSES APIs-----------------#
+
 @app.route('/python')
 def python():
     return render_template('Courses/python.html')
